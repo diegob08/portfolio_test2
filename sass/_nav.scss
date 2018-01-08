@@ -66,8 +66,8 @@
           transition: all .3s ease;
           &:hover,
           &:focus {
-            color: $diego_green;
-            border-bottom: solid 3px $diego_green;
+            color: $colour_green;
+            border-bottom: solid 3px $colour_green;
           }
         }
       }
@@ -98,7 +98,7 @@
           transition: all .3s ease;
           &:hover,
           &:focus {
-            border-bottom: solid 3px $diego_green;
+            border-bottom: solid 3px $colour_green;
           }
         }
       }

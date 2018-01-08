@@ -1,8 +1,25 @@
 {
-  "name": "diego bernal portfolio",
-  "private": true,
+  "name": "diego_bernal",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diegob08/portfolio_test2"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/diegob08/portfolio_test2"
+  },
+  "homepage": "https://github.com/diegob08/portfolio_test2#readme",
   "devDependencies": {
     "grunt": "^1.0.1",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0",
     "grunt-sass": "^2.0.0"
   }
 }

@@ -1,3 +1,7 @@
 ##IGNORE THESE FILES##
 
-node_modules
+node_modules/
+_DS_Store
+.DS_Store
+.idea
+.sass-cache/
