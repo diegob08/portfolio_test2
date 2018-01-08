@@ -1,0 +1,43 @@
+.self_portrait_wrap {
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  position: relative;
+  @media screen and (min-width: 40rem) {
+    height: 726px;
+  }
+  h2 {
+    @include mobile_section_title;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 2;
+    @media screen and (min-width: 40rem) {
+      position: relative;
+      top: 20%;
+      left: auto;
+      transform: translateX(0) translateY(0);
+    }
+  }
+}
+
+.bio {
+  padding: 30px 10px 10px 10px;
+  background-color: black;
+  text-align: center;
+  @media screen and (min-width: 40rem) {
+    background: none;
+    position: relative;
+    top: 25%;
+    z-index: 2;
+  }
+  p {
+    @include mobile_content_text;
+    &:first-child {
+      text-transform: uppercase;
+    }
+  }
+}

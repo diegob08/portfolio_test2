@@ -1,0 +1,47 @@
+.contact_section_wrap {
+  padding: 50px 10px 20px 10px;
+  background-color: black;
+}
+
+.contact_intro {
+  text-align: center;
+  h2 {
+    @include mobile_section_title;
+  }
+  p {
+    @include mobile_content_text;
+  }
+}
+
+.contact_form {
+  label {
+    @include mobile_form_label;
+  }
+  input {
+    background-color: black;
+    color: white;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 3px solid white;
+  }
+}
+
+.send {
+  text-align: center;
+  button {
+    width: 120px;
+    border: 3px solid white;
+    margin-top: 30px;
+    transition: all .5s ease;
+    &:hover,
+    &:focus {
+      background: $colour_green;
+      border: 3px solid $colour_green;
+    }
+    P {
+      @include mobile_portfolio_title;
+      margin: 0;
+    }
+  }
+}

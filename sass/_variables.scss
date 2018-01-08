@@ -1,0 +1,37 @@
+$title_text: 'Montserrat', sans-serif;
+$content_text: 'Lato', sans-serif;
+
+@mixin mobile_section_title {
+  font-family: $title_text;
+  font-size: 2rem;
+  font-weight: 500;
+  color: white;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+@mixin mobile_portfolio_title {
+  font-family: $title_text;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: white;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+@mixin mobile_content_text {
+  font-family: $content_text;
+  font-size: 1rem;
+  color: white;
+  margin-bottom: 10px;
+}
+
+@mixin mobile_form_label {
+  font-family: $content_text;
+  font-size: 1.25rem;
+  font-style: italic;
+  color: white;
+  margin-top: 10px;
+}
+
+$colour_green: #1ce593;

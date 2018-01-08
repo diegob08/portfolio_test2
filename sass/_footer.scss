@@ -1,0 +1,16 @@
+.main_footer {
+  background-color: black;
+  text-align: center;
+  padding: 60px 10px 30px 10px;
+  border-top: 3px solid white;
+  span {
+    font-size: 2rem;
+    margin: 0 10px 0 10px;
+    color: white;
+    transition: all 0.5s ease;
+    &:hover,
+    &:focus {
+      color: $diego_green;
+    }
+  }
+}
