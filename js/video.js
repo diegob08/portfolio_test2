@@ -2,7 +2,7 @@
     var video = document.querySelector('.demo_reel');
 
     function videoPlay() {
-        console.log('sss');
+        console.log('Fired from videoPlay');
         if (this.paused) {
             this.play();
         } else {
