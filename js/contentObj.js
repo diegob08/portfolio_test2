@@ -50,23 +50,10 @@ var dynamicContent = {
 			headline : "Julio Jones",
 
 			images : [
-				"winter_1.jpg",
-				"winter_2.jpg",
-				"winter_3.jpg",
-				"winter_4.jpg",
-				"winter_5.jpg",
-				"winter_6.jpg"
+				"julio_1.jpg",
+				"julio_2.jpg"
 
-			],
 
-			imageDescription : [
-
-				'Autumn path',
-				'Pumpkins',
-				'Baby Fox',
-				'Squirrel',
-				'Autumn leafs',
-				'Happy child'
 			]
 		}
 	};
