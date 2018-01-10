@@ -50,8 +50,8 @@ var dynamicContent = {
 			headline : "Julio Jones",
 
 			images : [
-				"julio_1.jpg",
-				"julio_2.jpg"
+				"jones1.jpg",
+				"jones2.jpg"
 
 
 			]

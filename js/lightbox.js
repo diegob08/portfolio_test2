@@ -1,35 +1,21 @@
 (function () {
- var theImages = document.querySelectorAll('.image-holder'),
+    var portfolio = document.querySelectorAll('.portfolio_overlay'),
 
-     appliedClass;
+    function portGallery() {
+        let contentObj = portfolioData[this.id];
 
-     function changeElements() {
-    
-       let subImages = document.querySelector('.subImagesContainer');
-       let objectIndex = dynamicContent[this.id];
-
-
-       while (subImages.firstChild) {
-         subImages.removeChild(subImages.firstChild);
-       }
-
-       objectIndex.images.forEach(function(element, index){
-         let newSubImg = document.createElement('img');
+        image.src = contentObj.image;
+        image.alt = contentObj.alt;
+        title.innerHTML = contentObj.title;
+        content.innerHTML = contentObj.content;
+    }
 
 
-         newSubImg.classList.add('thumb');
-
-         newSubImg.src = "images/" + objectIndex.images[index];
-
-
-         newSubImg.dataset.index = index;
-
-
-         newSubImg.addEventListener('click', function(){popLightbox(index, objectIndex);})
-
-
-         subImages.appendChild(newSubImg);
-       });
-
-       theSubhead.classList.remove(appliedClass);
-       theHeader.classList.remove(appliedClass);
+    portfolio.forEach(function (portfolioItem) {
+        portfolioItem.addEventListener('click', lightbox, false);
+    });
+    portfolioWrap.forEach(function (portfolioItem) {
+        portfolioItem.addEventListener('click', portGallery, false);
+    });
+    close.addEventListener('click', lightbox, false);
+})();

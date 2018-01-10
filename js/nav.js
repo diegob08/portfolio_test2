@@ -16,6 +16,8 @@
         this.classList.remove('hide_portfolio_overlay');
     }
 
+
+
     button.addEventListener('click', active, false);
     hideOverlay.forEach(function (navItem) {
         navItem.addEventListener('click', active, false);

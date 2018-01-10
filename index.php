@@ -34,8 +34,8 @@ if(isset($_POST['name'])){
 
 <h1 class="hide">Diego Bernal</h1>
 
-<div class="nav_bar_wrap grid-x" data-magellan>
-    <div class="small-3 large-4 cell logo_wrap">
+<div class="nav_bar_a grid-x" data-magellan>
+    <div class="small-3 large-4 cell logo_icon">
         <a href="#home"><img src="images/logo.svg" alt="Logo" class="nav_logo"></a>
     </div>
     <div class="small-6 cell hide-for-large"></div>
@@ -50,7 +50,7 @@ if(isset($_POST['name'])){
             </ul>
         </nav>
     </div>
-    <div class="small-3 cell burger_button_wrap hide-for-large">
+    <div class="small-3 cell burger_button_sct hide-for-large">
         <div class="burger_button">
             <div class="top"></div>
             <div class="mid"></div>
@@ -70,9 +70,9 @@ if(isset($_POST['name'])){
     </div>
 </div>
 
-<div class="banner_video_wrap grid-x" id="home" data-magellan-target="home"
+<div class="banner_video_sct grid-x" id="home" data-magellan-target="home"
      data-interchange="[images/hero_image_mobile.jpg, small], [images/hero_image.jpg, medium], [images/hero_image.jpg, large]">
-    <div class="cell title_wrap">
+    <div class="cell title_sct">
         <div class="text">
             <h2>demo reel</h2>
             <h3>motion & ui design</h3>
@@ -84,23 +84,32 @@ if(isset($_POST['name'])){
     <div class="banner_overlay"></div>
 </div>
 
-<div class="portfolio_section_wrap grid-x" id="portfolio" data-magellan-target="portfolio">
+<div class="portfolio_section_sct grid-x" id="portfolio" data-magellan-target="portfolio">
     <div class="portfolio_title cell">
         <h2>portfolio</h2>
         <p>Here you can find my most recent work including personal and commercial projects.</p>
     </div>
     <div class="frameworks cell portfolio large-6"
          data-interchange="[images/frameworks_img_mobile.jpg, small], [images/frameworks.jpg, medium], [images/frameworks.jpg, large]">
-        <div class="portfolio_text_wrap"> <a href="frameworks.html" class="hide_overlay"></a>
+        <div class="portfolio_text_sec"> <a href="frameworks.html" class="hide_overlay"></a>
             <h2>frameworks</h2>
             <p>ui & design concept</p>
+            <section>
+                  <div class="image-holder" id="frwrks_pr"></div>
+                  <ul class="subImagesContainer"></ul>
+                        <section class="lightbox">'
+                            <i class="fa fa-times close-lightbox"></i>
+                            <img src=" " alt="large preview image">
+                        </section>
+            </section>
+
 
         </div>
         <div class="portfolio_overlay"></div>
     </div>
     <div class="clairvoyant cell portfolio large-6"
          data-interchange="[images/clairvoyant_mobile.jpg, small], [images/clairvoyant.jpg, medium], [images/clairvoyant.jpg, large]">
-        <div class="portfolio_text_wrap">
+        <div class="portfolio_text_sec">
             <h2>the clairvoyant</h2>
             <p>design & motion</p>
         </div>
@@ -108,7 +117,7 @@ if(isset($_POST['name'])){
     </div>
     <div class="athly cell portfolio large-6"
          data-interchange="[images/athly_mobile.jpg, small], [images/athly.jpg, medium], [images/athly.jpg, large]">
-        <div class="portfolio_text_wrap">
+        <div class="portfolio_text_sec">
             <h2>athly</h2>
             <p>design & motion</p>
         </div>
@@ -116,7 +125,7 @@ if(isset($_POST['name'])){
     </div>
     <div class="julio cell portfolio large-6"
          data-interchange="[images/jones_mobile.jpg, small], [images/jones_desktop.jpg, medium], [images/jones_desktop.jpg, large]">
-        <div class="portfolio_text_wrap">
+        <div class="portfolio_text_sec">
             <h2>julio jones</h2>
             <p>design & motion</p>
         </div>
@@ -124,13 +133,13 @@ if(isset($_POST['name'])){
     </div>
 </div>
 
-<div class="about_section_wrap large-4" id="about" data-magellan-target="about">
-    <div class="cell self_portrait_wrap"
+<div class="about_section_sct large-4" id="about" data-magellan-target="about">
+    <div class="cell self_portrait_sct"
          data-interchange="[images/about_mobile.jpg, small], [images/about_desktop.jpg, medium], [images/about_desktop.jpg, large]">
-        <h2>who i am</h2>
+        <h2>who am i?</h2>
         <div class="bio hide-for-small-only">
             <p>I am Diego Bernal. I am a motion graphic designer.</p>
-            <p>Hello! My name is Diego Bernal and I’m a Motion Designer. I studied Audiovisual Media and some courses of Graphic Design in Colombia. <br>Recently I’m pursuing a Diploma in Interactive Media Design as a way to expand my knowledge and build up desirable skills for the current industry of Motion Design and Motion in UX.
+            <p>Hello! My name is Diego Bernal and I’m a Motion Designer. I studied Audiovisual Media and some courses of Graphic Design in Colombia. <br>recently I’m pursuing a Diploma in Interactive Media Design as a way to expand my knowledge and build up desirable skills for the current industry of Motion Design and Motion in UX.
             I came to Canada in 2016 to follow my dreams, my passion and discipline have brought me here with the goal to pursue a career in the Motion Design industry.
             </p>
 
@@ -147,31 +156,29 @@ if(isset($_POST['name'])){
     </div>
 </div>
 
-<div class="contact_section_wrap grid-x" id="contact" data-magellan-target="contact">
+<div class="contact_section_sct grid-x" id="contact" data-magellan-target="contact">
     <div class="contact_intro cell medium-8 medium-offset-2">
         <h2>contact</h2>
         <p>
-            Let’s work together! Send me a brief message either about a porject you have in mind <br>
-						that requires video and animation or just to say Hello, I will contact you back soon to <br>
-						help you out with you business or your idea:
+          Let’s work together! Send me a brief message either about a porject you have in mind <br>
+          that requires video and animation or just to say Hello, I will contact you back soon to <br>
+          help you out with your business or your idea:
         </p>
     </div>
 
-    <form action="contact.php" class="contact_form cell medium-6 medium-offset-3 large-4 large-offset-4">
-        <label for="name">Name</label>
+    <form class="contact_form cell medium-6 medium-offset-3 large-4 large-offset-4">
+        <label for="">Name</label>
         <input type="text">
-        <label for="email">Email</label>
+        <label for="">Email</label>
         <input type="email">
-        <label for="subj">Subject</label>
+        <label for="">Subject</label>
         <input type="text">
-        <label for="message">Message</label>
+        <label for="">Message</label>
         <input type="text">
-				<input name="submit" type="submit" value="Send" />
     </form>
     <div class="send cell medium-12">
-
-        <button name="submit" type="submit" value="Send" />
-            <p >send</p>
+        <button>
+            <p>send</p>
         </button>
     </div>
 </div>

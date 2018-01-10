@@ -24,7 +24,7 @@
   @media screen and (min-width: 64rem) {
     height: 420px;
   }
-  .portfolio_text_wrap {
+  .portfolio_text_sec {
     position: absolute;
     text-align: center;
     width: 100%;
@@ -54,4 +54,7 @@
   .hide_portfolio_overlay & {
     display: none;
   }
+}
+.portfolio_cont_master {
+  display: none;
 }

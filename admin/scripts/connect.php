@@ -3,7 +3,7 @@
 	$pass = "root";
 	//$pass = "root"; for mac only
 	$url = "localhost";
-	$db = "db_mail";
+	$db = "diego529_db_mail";
 
 	$link = mysqli_connect($url, $user, $pass, $db, "8888");
 	//creates us access token to our database
